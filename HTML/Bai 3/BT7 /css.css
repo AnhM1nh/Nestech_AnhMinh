@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+}
+
+header {
+    padding-bottom: 15px;
+}
+
+hr {
+    border-top: 1px dotted black;
+}
+
+li {
+    padding-top: 20px;
+}
+
+ul>li>label {
+    font-weight: 650;
+}
+
+.option>select {
+    width: 50vw;
+}
+
+.how-pay-money {
+    display: flex;
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin: 0 5px 0 5px
+}
+
+textarea {
+    width: 100vw;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100vw;
+}
+
+.size-table>td {
+    width: 15vw;
+}
+
+.size-table>td:first-child {
+    width: auto;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 3px;
+    background-color: azure;
+    border-radius: 10px;
+}
