@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: aliceblue;
+    background-color: #FFA500;
+    border: 10px solid #FFA500;
+}
+
+form {
+    border: 20px solid #129de2;
+    padding: 10px;
+    width: 50vw;
+}
+
+input[type="text"] {
+    width: 90%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.information>label,
+.select,
+input[name="yourname"] {
+    margin-top: 15px;
+}
+
+input[name="email"] {
+    margin-top: 10px;
+}
+
+.select-hobby {
+    display: flex;
+    flex-wrap: wrap;
+}
