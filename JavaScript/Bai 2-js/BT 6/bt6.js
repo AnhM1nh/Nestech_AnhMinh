@@ -1,36 +1,28 @@
-var inNumber1
-var inNumber2
+calc = (cal) => {
 
 
-function number1() {
-    inNumber1 = parseFloat(document.getElementById('inNumber1').value);
-}
+    var number1 = parseFloat(document.getElementById('inNumber1').value);
+    var number2 = parseFloat(document.getElementById('inNumber2').value);
 
-function number2() {
-    inNumber2 = parseFloat(document.getElementById('inNumber2').value);
-}
-console.log(inNumber1, inNumber2);
+    switch (cal) {
+        case 1:
+            result = number1 + number2
+            break
 
-function addition() {
-    var additionN = inNumber1 + inNumber2;
-    document.getElementById('result').innerHTML = "Result Division : " + additionN;
-    event.preventDefault();
-}
+        case 2:
+            result = number1 - number2
+            break
 
-function subtraction() {
-    var subtractionN = inNumber1 - inNumber2;
-    document.getElementById('result').innerHTML = "Result Division : " + subtractionN;
-    event.preventDefault();
-}
+        case 3:
+            result = number1 * number2
+            break
 
-function multiplication() {
-    var multiplicationN = inNumber1 * inNumber2;
-    document.getElementById('result').innerHTML = "Result Division : " + multiplicationN;
-    event.preventDefault();
-}
+        case 4:
+            result = number1 / number2
+            break
+    }
 
-function division() {
-    var divisionN = inNumber1 / inNumber2;
-    document.getElementById('result').innerHTML = "Result Division : " + divisionN;
+
+    document.getElementById("result").innerHTML = "Result Division: " + result;
     event.preventDefault();
 }
