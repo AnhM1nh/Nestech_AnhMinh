@@ -9,7 +9,15 @@
 </head>
 
 <body>
+    <script>
+        let height = prompt('Nhập chiều cao của bạn: ', 'VD: ? mét');
+        let weight = prompt('Nhập cân nặng của bạn: ', 'VD: ? kg');
 
+        let bmi = weight / (height ^ 2);
+
+        (bmi < 18.5) ? alert('Under Weight'): (bmi < 25) ? alert('Normal') : (bmi < 30) ? alert(
+            'OverWeight') : alert('Obese');
+    </script>
 </body>
 
 </html>
