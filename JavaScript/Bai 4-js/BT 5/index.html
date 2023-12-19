@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Máy Tính Đơn Giản</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            
+            .calculator {
+                width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            
+            button {
+                width: 50px;
+                height: 40px;
+                margin: 5px;
+                font-size: 16px;
+            }
+            
+            input[type="text"] {
+                width: 70%;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="calculator">
+            <input type="text" id="result" disabled>
+            <div class="buttons">
+                <button onclick="buttonResults('7')">7</button>
+                <button onclick="buttonResults('8')">8</button>
+                <button onclick="buttonResults('9')">9</button>
+                <button onclick="buttonResults('+')">+</button>
+                <br>
+                <button onclick="buttonResults('4')">4</button>
+                <button onclick="buttonResults('5')">5</button>
+                <button onclick="buttonResults('6')">6</button>
+                <button onclick="buttonResults('-')">-</button>
+                <br>
+                <button onclick="buttonResults('1')">1</button>
+                <button onclick="buttonResults('2')">2</button>
+                <button onclick="buttonResults('3')">3</button>
+                <button onclick="buttonResults('*')">*</button>
+                <br>
+                <button onclick="buttonResults('0')">0</button>
+                <button onclick="buttonResults('/')">/</button>
+                <button onclick="clearResult()">C</button>
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+
+        <script>
+            let result = document.getElementById('result');
+
+            function buttonResults(value) {
+                result.value = result.value + value;
+            }
+
+            function clearResult() {
+                result.value = '';
+            }
+
+            function calculate() {
+                result.value = eval(result.value);
+            }
+        </script>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
