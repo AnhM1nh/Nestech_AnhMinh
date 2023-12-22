@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Thiết lập phông chữ toàn bộ trang */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        /* Định dạng các khối div chứa các bài tập */
+        
+        div {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* Định dạng các nút và input */
+        
+        button,
+        input {
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        /* Định dạng tiêu đề */
+        
+        h4 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <h4>Bài 1: Chuyển từ độ C sang độ F. </h4>
+        <label for="">
+            <p>Nhập độ C</p>
+            <input type="number" id="number_bai_1">
+        </label>
+        <button onclick="button_1()">Kiểm tra</button>
+        <div id="result_1"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 2: Chuyển từ mét sang feet. </h4>
+        <label for="">
+            <p>Nhập số mét</p>
+            <input type="number" id="number_bai_2">
+        </label>
+        <button onclick="button_2()">Kiểm tra</button>
+        <div id="result_2"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 3: Tính diện tích hình vuông khi biết cạnh a ? </h4>
+        <label for="">
+            <p>Nhập A</p>
+            <input type="number" id="number_bai_3">
+        </label>
+        <button onclick="button_3()">Kiểm tra</button>
+        <div id="result_3"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 4: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b ? </h4>
+        <label for="">
+            <p>Nhập a</p>
+            <input type="number" id="number_a_bai_4">
+            <p>Nhập b</p>
+            <input type="number" id="number_b_bai_4">
+        </label>
+        <button onclick="button_4()">Kiểm tra</button>
+        <div id="result_4"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b ? </h4>
+        <label for="">
+            <p>Nhập a</p>
+            <input type="number" id="number_a_bai_5">
+            <p>Nhập b</p>
+            <input type="number" id="number_b_bai_5">
+        </label>
+        <button onclick="button_5()">Kiểm tra</button>
+        <div id="result_5"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 6: Giải phương trình bậc 1.(ax + b = 0 => x = -b/a) ? </h4>
+        <label for="">
+            <p>Nhập a</p>
+            <input type="number" id="number_a_bai_6">
+            <p>Nhập b</p>
+            <input type="number" id="number_b_bai_6">
+        </label>
+        <button onclick="button_6()">Kiểm tra</button>
+        <div id="result_6"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 7: Giải phương trình bậc 2: (ax2 + bx + c = 0) ?</h4>
+        <label for="">
+            <p>Nhập a</p>
+            <input type="number" id="number_a_bai_7">
+            <p>Nhập b</p>
+            <input type="number" id="number_b_bai_7">
+            <p>Nhập c</p>
+            <input type="number" id="number_c_bai_7">
+        </label>
+        <button onclick="button_7()">Kiểm tra</button>
+        <div id="result_7"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0 ? </h4>
+        <label for="">
+            <p>Nhập số tuổi</p>
+            <input type="number" id="check_age">
+        </label>
+        <button onclick="button_8()">Kiểm tra</button>
+        <div id="result_8"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác không ? </h4>
+        <label for="">
+            <p>Nhập a</p>
+            <input type="number" id="triangle_edge_a">
+            <p>Nhập b</p>
+            <input type="number" id="triangle_edge_b">
+            <p>Nhập c</p>
+            <input type="number" id="triangle_edge_c">
+        </label>
+        <button onclick="button_9()">Kiểm tra</button>
+        <div id="result_9"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 10: Viết chương trình tính giá điện ? </h4>
+        <label for="">
+            <p>Nhập tổng điện đã dùng (? kWh)</p>
+            <input type="number" id="electricity">
+        </label>
+        <button onclick="button_10()">Kiểm tra</button>
+        <div id="result_10"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 11: Viết chương trình tính thuế thu nhập cá nhân ? </h4>
+        <label for="">
+            <p>Nhập tiền lương tháng.</p>
+            <input type="number" id="personal_tax">
+        </label>
+        <button onclick="button_11()">Kiểm tra</button>
+        <div id="result_11"></div>
+    </div>
+
+
+    <div class="">
+        <h4>Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng ? </h4>
+        <label for="">
+            <p>Tổng tiền vay</p>
+            <input type="number" id="total_loan_amount">
+            <p>Lãi suất hàng tháng</p>
+            <input type="number" id="interest_rate">
+            <p>Số tháng cho vay</p>
+            <input type="number" id="month">
+        </label>
+        <button onclick="button_12()">Kiểm tra</button>
+        <div id="result_12"></div>
+    </div>
+
+    <script src="./baitap9.js"></script>
+</body>
+
+</html>

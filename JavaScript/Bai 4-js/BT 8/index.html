@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        input[type="number"],
+        select {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            padding: 5px 8px;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        
+        #result_1,
+        #result_2,
+        #result_3,
+        #result_4,
+        #result_5,
+        #result_6,
+        #result_7 {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <h3> Bài 1: Kiểm tra a có chia hết cho b hay không ? </h3> <br>
+        <input id="number_a" type="number">
+        <input id="number_b" type="number">
+        <button onclick="buttonBai1()"> Kiểm tra </button>
+        <div id="result_1"></div>
+    </div>
+
+    <div class="">
+        <h3>Bài 2: Kiểm tra tuổi có đủ điều kiện vào học lớp 10 không ? </h3> <br>
+        <input id="age_student" type="number">
+        <button onclick="buttonBai2()"> Kiểm tra </button>
+        <div id="result_2"></div>
+    </div>
+
+    <div class="">
+        <h3>Bài 3: Nhập số nguyên và kiểm tra lớn nhỏ hơn 0 ? </h3> <br>
+        <input id="integer" type="number">
+        <button onclick="buttonBai3()"> Kiểm tra </button>
+        <div id="result_3"></div>
+    </div>
+
+    <div class="">
+        <h3>Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất ? </h3> <br>
+        <input id="integer_a" type="number">
+        <input id="integer_b" type="number">
+        <input id="integer_c" type="number">
+        <button onclick="buttonBai4()"> Kiểm tra </button>
+        <div id="result_4"></div>
+    </div>
+
+    <div class="">
+        <h3>Bài 5: Kiểm tra học lực của học sinh ? </h3> <br>
+        <label for="">
+            <p>Nhập điểm bài kiểm tra ?</p>
+            <input id="point_a" type="number">
+        </label>
+        <label for="">
+            <p>Nhập điểm thi giữa kỳ ?</p>
+            <input id="point_b" type="number">
+        </label>
+        <label for="">
+            <p>Nhập điểm thi cuối kỳ ?</p>
+            <input id="point_c" type="number">
+        </label>
+        <button onclick="buttonBai5()"> Kiểm tra </button>
+        <div id="result_5"></div>
+    </div>
+
+    <div class="">
+        <h3>Bài 6: Tính hoa hồng nhận được ? </h3> <br>
+        <label for="">
+            <p>Nhập % số hoa hồng ?</p>
+            <input id="percent_number" type="number">
+        </label>
+        <label for="">
+            <p>Nhập doanh số bán hàng ?</p>
+            <input id="profit_figure" type="number">
+        </label>
+        <button onclick="buttonBai6()"> Kiểm tra </button>
+        <div id="result_6"></div>
+    </div>
+
+    <div class="">
+        <h3> Bài 7: Tính cước điện thoại ?</h3>
+        <label for="">
+            <p>Nhập tổng số phút đã gọi ?</p>
+            <input id="total_number" type="number">
+            <select name="" id="net_work">
+                <option value="mobifone">Mobifone</option>
+                <option value="vinaphone">VinaPhone</option>
+            </select>
+        </label>
+        <button onclick="buttonBai7()"> Kiểm tra </button>
+        <div id="result_7"></div>
+    </div>
+    <script src="./baitap8.js"></script>
+</body>
+
+</html>
