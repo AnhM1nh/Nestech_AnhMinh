@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers = parseInt(prompt("Nhập số lượng số nguyên tố cần in ra: "));
+        let count = 0;
+        let N = 2;
+
+        function isPrime(n) {
+            if (n < 2) {
+                return false;
+            }
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+        while (count < numbers) {
+            if (isPrime(N)) {
+                console.log(N);
+                count++;
+            }
+            N++;
+        }
+    </script>
+</body>
+
+</html>
