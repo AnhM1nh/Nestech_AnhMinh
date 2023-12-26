@@ -93,3 +93,34 @@ function buttonBai7() {
         }
     }
 }
+
+function buttonStartBai8() {
+    let value_1_bai_8 = parseInt(prompt("Nhập số 1 để bắt đầu"));
+    let value_2_bai_8 = parseInt(prompt("Nhập số 2 để bắt đầu"));
+    let count = 1;
+
+    if (isNaN(value_1_bai_8) || isNaN(value_2_bai_8) || value_1_bai_8 > value_2_bai_8) {
+        alert("Vui lòng nhập lại ('Số 1 nhỏ hơn số 2')");
+        return;
+    };
+
+    let randomNumberBai8 = Math.floor(Math.random() * (value_2_bai_8 - value_1_bai_8)) + value_1_bai_8;
+
+    while (count < 4) {
+        let userChoice = parseInt(prompt("Nhập số để đoán"));
+
+        if (isNaN(userChoice)) {
+            alert('Vui lòng nhập số');
+        } else if (userChoice == randomNumberBai8) {
+            alert('Xin chúc mừng ' + userChoice + ' là số chính xác');
+            break;
+        } else if (userChoice < randomNumberBai8) {
+            alert('Số nhỏ hơn gòi, nhập lại');
+        } else {
+            alert('Số lớn hơn gòi, nhập lại');
+        }
+
+        count++
+    }
+    alert('Hết lượt chơi òi, bấm bắt đầu để chơi lại');
+}
