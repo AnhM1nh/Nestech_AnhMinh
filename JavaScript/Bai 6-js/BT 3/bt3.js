@@ -22,7 +22,7 @@ function buttonBai2() {
 }
 
 function fibonacciBai3(count) {
-    let fibonacci_bai3 = [0, 1];
+    let fibonacci_bai3 = [1, 1];
 
     for (let i = 2; i < count; i++) {
         let nextFibonacci = fibonacci_bai3[i - 1] + fibonacci_bai3[i - 2];
@@ -37,7 +37,7 @@ function buttonBai3() {
 }
 
 function buttonBai4() {
-    let firstFibonacci = 0;
+    let firstFibonacci = 1;
     let secondFibonacci = 1;
     let nextFibonacci = firstFibonacci + secondFibonacci;
 
