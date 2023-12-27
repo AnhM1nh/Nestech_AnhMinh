@@ -55,3 +55,29 @@ function buttonHinh2() {
         console.log(triangle);
     }
 }
+
+function buttonHinh3() {
+    for (i = 1; i < 6; i++) {
+        let triangle = '';
+        for (j = 4; j >= i; j--) {
+            triangle += '  ';
+        }
+        for (z = 1; z <= i; z++) {
+            triangle += '* ';
+        }
+        console.log(triangle);
+    }
+}
+
+function buttonHinh4() {
+    for (i = 1; i < 6; i++) {
+        let triangle = '';
+        for (j = 1; j <= i; j++) {
+            triangle += '  ';
+        }
+        for (z = 5; z >= i; z--) {
+            triangle += '* ';
+        }
+        console.log(triangle);
+    }
+}
