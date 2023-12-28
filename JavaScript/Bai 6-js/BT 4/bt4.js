@@ -81,3 +81,24 @@ function buttonHinh4() {
         console.log(triangle);
     }
 }
+
+function buttonBai4() {
+    for (i = 1; i <= 7; i++) {
+        let rectan = '';
+        if (i == 1 || i == 7) {
+            for (j = 20; j > 1; j--) {
+                rectan += ' *';
+            }
+        } else {
+            for (z = 20; z > 1; z--) {
+                if (z == 2 || z == 20) {
+                    rectan += ' *';
+                } else {
+                    rectan += '  ';
+                }
+            }
+        }
+
+        console.log(rectan);
+    }
+}
