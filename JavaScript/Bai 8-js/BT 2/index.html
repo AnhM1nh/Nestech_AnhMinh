@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //BAI 1.
+        let myColor = ["Red", "Green", "White", "Black"];
+        let totalMyColor = myColor.join(",");
+
+        console.log(totalMyColor);
+
+
+
+        //BAI 2.   
+        let number = prompt("Nhập số bài 2");
+        let stringNumber = number.toString();
+        let elementNumber = [stringNumber[0]];
+
+        for (let i = 1; i < stringNumber.length; i++) {
+            if ((stringNumber[i - 1] % 2 === 0) && (stringNumber[i] % 2 === 0)) {
+                elementNumber.push('-', stringNumber[i]);
+            } else {
+                elementNumber.push(stringNumber[i]);
+            }
+        }
+        console.log(elementNumber.join(''));
+
+
+
+        //BAI 3
+        let text = prompt("Nhập chữ bài 3");
+        let upperText = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let lowerText = 'abcdefghijklmnopqrstuvwxyz';
+        let resultBai3 = [];
+
+        for (let i = 0; i < text.length; i++) {
+            if (upperText.includes(text[i])) {
+                resultBai3.push(text[i].toLowerCase());
+            } else if (lowerText.includes(text[i])) {
+                resultBai3.push(text[i].toUpperCase());
+            } else {
+                resultBai3.push(text[i]);
+            }
+        }
+
+        console.log(resultBai3.join(''));
+    </script>
+</body>
+
+</html>

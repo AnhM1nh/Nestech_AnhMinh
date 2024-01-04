@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        <input type="text" id="text">
+        <button onclick="Bai3()">Kết Quả</button>
+    </label>
+
+
+    <script>
+        let english = ["hello", "good bye", "good night"];
+        let vietnamese = ["xin chào", "tạm biệt", "chúc ngủ ngon"];
+
+        function Bai3() {
+            let text = document.getElementById('text').value;
+            let index = english.indexOf(text);
+
+            if (index !== -1) {
+                let vietnamWord = vietnamese[index];
+                console.log(vietnamWord);
+            } else {
+                console.log('Không tìm thấy !');
+            }
+        }
+    </script>
+</body>
+
+</html>
