@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="feet" oninput="conversion('feet')" onchange="conversion('feet')">
+    <p>Meter: <span id="outputMeter"></span></p>
+    <input type="number" id="meter" oninput="conversion('meter')" onchange="conversion('meter')">
+    <p>Feet: <span id="outputFeet"></span></p>
+
+    <script>
+        function conversion(changed) {
+            let feet = parseInt(document.getElementById('feet').value);
+            let meter = parseInt(document.getElementById('meter').value);
+
+            if (changed === 'feet') {
+                let toMeter = feet * 0.305;
+                document.getElementById('outputMeter').innerText = toMeter;
+            } else if (changed === 'meter') {
+                let toFeet = meter * 3.279;
+                document.getElementById('outputFeet').innerText = toFeet;
+            }
+        }
+
+        conversion('feet');
+        conversion('meter');
+    </script>
+</body>
+
+</html>
