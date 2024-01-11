@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 50vw;
+            height: 30px;
+            margin: 20px 0 20px 20px;
+            color: darkgray;
+            border: 1px solid darkgray;
+            border-radius: 5px;
+        }
+        
+        button {
+            width: 60px;
+            height: 33px;
+            border-radius: 5px;
+            color: azure;
+            background-color: seagreen;
+            border: none;
+        }
+        
+        .product_name {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        p {
+            color: brown;
+            font-weight: bold;
+        }
+        
+        p:first-child {
+            color: black;
+        }
+        
+        table {
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <h3>Add New Product</h3>
+        <input type="text" placeholder="New Product" id="product">
+        <button onclick="addProduct()">Add</button>
+    </div>
+    <div class="">
+        <h3>Display All Product</h3>
+        <div class="product_name">
+            <p>Product Name</p>
+            <p><span id="quantity_product"></span> product</p>
+        </div>
+        <table id="table_product">
+            <tr>
+                <td>Sony Xperia</td>
+                <td><button onclick="editProduct()">Edit</button></td>
+                <td><button onclick="deleteProduct()">Delete</button></td>
+            </tr>
+        </table>
+        <p id="text"></p>
+    </div>
+
+    <script src="./bt4.js"></script>
+</body>
+
+</html>
