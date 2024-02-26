@@ -3,49 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6.[Bài tập] Ứng dụng máy tính</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td colspan="2"><input id="a"></td>
-            <td colspan="2"><input id="b"></td>
 
-        </tr>
-        <tr>
-            <td><button onclick="calc(1)">Addition (+)</button></td>
-            <td><button onclick="calc(2)">Subtraction (-)</button></td>
-            <td><button onclick="calc(3)">Multiplication (X)</button></td>
-            <td><button onclick="calc(4)">Division (/)</button></td>
-        </tr>
-    </table>
-    <input id="result" disabled>
-    <script>
-        calc = (cal) => {
-            let result
-            let a = document.getElementById('a').value
-            let b = document.getElementById('b').value
-            a = parseFloat(a)
-            b = parseFloat(b)
-            switch (cal) {
-                case 1:
-                    result = a + b
-                    break
-                case 2:
-                    result = a - b
-                    break
-                case 3:
-                    result = a * b
-                    break
-                case 4:
-                    result = a / b
-                    break
-            }
-            document.getElementById('result').value = result
-        }
-    </script>
+
+
+    <script src="./test.js"></script>
 </body>
 
 </html>

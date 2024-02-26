@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">
+        <p>Bài 1: Tính bình phương</p>
+        <input type="number" id="number_bai_1" onkeyup="Bai1()" onchange="Bai1()" placeholder="Nhập số">
+        <p id="result_bai_1"></p>
+    </div>
+    <div class="">
+        <p>Bài 2: Tính diện tích, chu vi hình tròn</p>
+        <input type="number" id="number_bai_2" onkeyup="Bai2()" onchange="Bai2()" placeholder="Nhập bán kính">
+        <p id="result_bai_2a"></p>
+        <p id="result_bai_2b"></p>
+    </div>
+    <div class="">
+        <p>Bài 3: Tính giai thừa</p>
+        <input type="number" id="number_bai_3" onkeyup="Bai3()" onchange="Bai3()" placeholder="Nhập số">
+        <p id="result_bai_3"></p>
+    </div>
+    <div class="">
+        <p>Bài 4: Viết hàm kiểm tra </p>
+        <input type="text" id="text_bai_4" onkeyup="Bai4()" onchange="Bai4()">
+        <p id="result_bai_4"></p>
+    </div>
+    <div class="">
+        <p>Bài 5: Số nguyên có giá trị nhỏ nhất</p>
+        <input type="number" id="number_bai_5a" placeholder="Số 1">
+        <input type="number" id="number_bai_5b" placeholder="Số 2">
+        <input type="number" id="number_bai_5c" placeholder="Số 3">
+        <button onclick="Bai5()">Kết quả</button>
+        <p id="result_bai_5"></p>
+    </div>
+    <div class="">
+        <p>Bài 6: Kiểm tra có phải dương không </p>
+        <input type="number" id="number_bai_6">
+        <button onclick="Bai6()">Kiểm tra</button>
+        <p id="result_bai_6"></p>
+    </div>
+    <div class="">
+        <p>Bài 7: Đổi chỗ 2 số nguyên</p>
+        <input type="number" id="number_bai_7a" placeholder="Số 1">
+        <input type="number" id="number_bai_7b" placeholder="Số 2">
+        <button onclick="Bai7()">Kết quả</button>
+        <p id="result_bai_7"></p>
+    </div>
+    <div class="">
+        <p>Bài 8: Đổi chỗ mảng</p>
+        <input type="number" id="number_bai_8">
+        <button onclick="Bai8()">Thêm</button>
+        <p id="result_bai_8"></p>
+    </div>
+    <div class="">
+        <p>Bài 9: Kiểm tra xem ký tự ["a", "b", "c", "d", "e", "d", "f", "o"]</p>
+        <input type="text" id="text_bai_9">
+        <button onclick="Bai9()">Kiểm tra</button>
+        <p id="result_bai_9"></p>
+
+    </div>
+    <script src="./bt6.js"></script>
+</body>
+
+</html>

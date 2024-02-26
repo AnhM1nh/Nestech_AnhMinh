@@ -1,11 +1,25 @@
-function Bai1() {
-    let number_bai_1 = parseInt(document.getElementById("number_bai_1").value);
-    document.getElementById("result_bai_1").innerText = "Kết quả là: " + number_bai_1 * number_bai_1;
+function isPalindrome(s) {
+    s = s.toLowerCase();
+    console.log(s);
+    if (s.length <= 1) {
+        return true;
+    }
+
+    if (s[0] === s[s.length - 1]) {
+        return isPalindrome(s.slice(1, -1));
+    } else {
+        return false;
+    }
 }
 
-function Bai2() {
-    let number_bai_2 = parseInt(document.getElementById("number_bai_2").value);
-    document.getElementById("result_bai_2a").innerText = "Diện tích bằng: " + Math.Pi * (number_bai_2 * number_bai_2);
-    document.getElementById("result_bai_2b").innerText = "Chu vi bằng: " + Math.Pi * (number_bai_2 * 2);
+function checkPalindrome() {
+    let text_test = document.getElementById("text_test").value;
+    let result = document.getElementById("result");
+
+    if (isPalindrome(text_test)) {
+        result.innerText = "True";
+    } else {
+        result.innerText = "False"
+    }
 
 }
