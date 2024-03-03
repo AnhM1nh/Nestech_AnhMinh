@@ -1,12 +1,9 @@
-function fib(n) {
-    if (n === 0) {
-        return 0;
-    } else if (n === 1) {
-        return 1;
-    } else {
-        return fib(n - 1) + fib(n - 2);
+function reverse(text) {
+    for (let i = 0; i < text.length; i++) {
+        text[i] = text[i].split('').reverse().join('');
     }
+    return text;
 }
-
-var result = fib(5);
+let text = ['anh', 'minh'];
+let result = reverse(text);
 console.log(result);
